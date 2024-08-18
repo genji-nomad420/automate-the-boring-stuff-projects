@@ -1,0 +1,13 @@
+# defining a list
+list = ['comma', 'spam', 'regret', 'print']
+
+# a function that makes a list separated with comma and adds 'and'
+def comma(list):
+    while list[:-1]:
+        for i in list:
+            print(i + ', ', end='')
+        if list[-2]:
+            print('and ' + list[-1], end='')
+            break
+
+comma(list)
